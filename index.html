@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel='stylesheet' href='css/bootstrap-theme.min.css'>
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+<link rel='stylesheet' href='css/main.css'>
+</head>
+
+<body>
+  <container>
+    <nav>
+      <ul>
+        <div id='menu'>
+        <li>
+          <i class='material-icons'>&#xE5D2</i>
+        </li>
+      </div>
+      </ul>
+    </nav>
+    <div id='overmap'>
+    <div id='filter'>
+      <div class='filter-bar'>
+        <h2>Search Pittsburgh Sports Venues</h2>
+        <input id='userFilter' data-bind="value:userSearch, valueUpdate: 'input'" placeholder="Type a venue name..."/>
+      </div>
+     <ul id="list" data-bind="foreach: filterVenues">
+      <a href='#'>   <li>
+      <h3 data-bind="text: name, click: $parent.setVenue"></h3>
+    </li></a>
+
+
+      </ul>
+      </div>
+    </div>
+</div>
+    <div id='map'>
+    </div>
+  </container>
+
+
+
+  <script type='text/javascript' src='js/jquery-3.2.1.min.js'></script>
+  <script type='text/javascript' src='js/knockout-3.4.2.js'></script>
+  <script type='text/javascript' async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA_WObUiYD7YpoYufR84re1LZHAJeAGXkY&v=3&callback=initMap">
+  </script>
+  <script type='text/javascript' src='js/app.js'></script>
+  <script type='text/javascript' src='js/menu.js'></script>
+</body>
+</html>
