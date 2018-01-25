@@ -18,9 +18,9 @@ ul li {
 }
 
 h1 {
- margin: 0;
- border: 0;
- padding: 5%;
+  margin: 0;
+  border: 0;
+  padding: 5%;
 }
 
 h3 {
@@ -37,7 +37,6 @@ a {
   text-decoration: none;
   color: #FFB81C;
   font-size: 1em;
-
 }
 
 nav {
@@ -61,13 +60,11 @@ nav ul {
   margin: 0;
   padding: 0;
   border: 0;
-
 }
 
 nav ul li {
   width: 20%;
   list-style: none;
-
 }
 
 nav ul li:hover {
@@ -95,7 +92,6 @@ nav ul li:active {
   z-index: 99;
   padding: 5%;
   color: #999;
-
 }
 
 #overmap {
@@ -111,31 +107,28 @@ i.material-icons {
   position: relative;
 }
 
-@media only all and (min-width: 850px){
+@media only all and (min-width: 850px) {
   #overmap {
     width: 40%;
   }
-
 }
 
-@media only all and (max-width: 768px){
+@media only all and (max-width: 768px) {
   #overmap {
     width: 60%;
   }
 }
 
-@media only all and (max-width: 414px){
+@media only all and (max-width: 414px) {
   #overmap {
     width: 100%;
   }
 }
 
-@media only all and (min-width: 1px){
+@media only all and (min-width: 1px) {
   #overmap {
     display: none;
   }
-
-
 }
 
 .filter .filter-bar {
