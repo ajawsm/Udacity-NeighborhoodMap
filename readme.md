@@ -1,7 +1,7 @@
 Udacity Neighborhood Map Project by Adam J. Mohney
 ==================================================
 
-# Pittsburgh Sports Venue Finder
+# Pittsburgh Sports Venue Locator
 
 ## How To Use
 1. Open the *index.html* file.
