@@ -55,7 +55,8 @@ function ajaxCall(i) {
   $.ajax({
     url: wikiURL,
     dataType: "jsonp",
-    success: function(data) {
+  })
+    .done(function(data) {
       text = data[2];
       //Gets the first entry only
       venues[i].info = text[0];
@@ -99,10 +100,14 @@ function ajaxCall(i) {
 
       });
 
-    }
-  });
+    })
 
-}
+    .fail(function(){
+    alert('Something went wrong!');
+
+    });
+  }
+
 
 
 //capturing locations and names in arrays as we iterate through createMarker function
@@ -165,16 +170,19 @@ var viewmodel = function() {
 };
 
 
+
+
 //Map Initializer
 //Attribution: The Google Team's Tutorial within the Udacity Coursework
 function initMap() {
   map = new google.maps.Map(document.getElementById('map'), {
     center: {
-      lat: 40.446855,
-      lng: -80.0056666
+      lat: 40.439593,
+      lng: -79.989338,
     },
     zoom: 14,
-    mapTypeId: 'satellite'
+    mapTypeId: 'satellite',
+
   });
 
   //Invocates createMarker function
@@ -182,4 +190,10 @@ function initMap() {
 
   //creates a new View Model.
   ko.applyBindings(new viewmodel());
+
+}
+
+//Alerts user that Google Maps didn't load
+function mapError() {
+  alert("We're sorry. Google Maps did not load!");
 }

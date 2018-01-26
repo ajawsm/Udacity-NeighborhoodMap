@@ -1,5 +1,6 @@
 html, body {
   height: 100%;
+  width: 100%;
   margin: 0;
   border: 0;
   padding: 0;
@@ -50,9 +51,6 @@ nav {
   border: 0;
 }
 
-nav:active {
-  color: #FFB81C;
-}
 
 nav ul {
   display: flex;

@@ -2,6 +2,8 @@
 <html>
 
 <head>
+  <title>Pittsburgh Sports Venue Finder</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel='stylesheet' href='css/bootstrap-theme.min.css'>
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
   <link rel='stylesheet' href='css/main.css'>
@@ -13,12 +15,12 @@
       <ul>
         <div id='menu'>
           <li>
-            <i class='material-icons'>&#xE5D2</i>
+            <i class='material-icons'>&#xE5D2;</i>
           </li>
 
         </div>
       </ul>
-      <p>All venue information courtesy of the Wikipedia API.</p>
+      <p>All Venue Info from Wikipedia API.</p>
     </nav>
     <div id='overmap'>
       <div id='filter'>
@@ -47,10 +49,10 @@
 
   <script type='text/javascript' src='js/jquery-3.2.1.min.js'></script>
   <script type='text/javascript' src='js/knockout-3.4.2.js'></script>
-  <script type='text/javascript' async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA_WObUiYD7YpoYufR84re1LZHAJeAGXkY&v=3&callback=initMap">
-  </script>
   <script type='text/javascript' src='js/app.js'></script>
   <script type='text/javascript' src='js/menu.js'></script>
+  <script type='text/javascript' async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA_WObUiYD7YpoYufR84re1LZHAJeAGXkY&v=3&callback=initMap" onerror="mapError()">
+  </script>
 </body>
 
 </html>
